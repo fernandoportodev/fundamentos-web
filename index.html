@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Perfil</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-    <h1>Sobre o Fernando</h1>
+    <main>
+      <h1>Sobre o Fernando</h1>
+      <div class="sobre">
+        <div>
+          <img
+            class="imagem"
+            src="./assets/img/fotominha.png"
+            alt="Foto do criador desse conteúdo"
+          />
+        </div>
 
-    <p>
-        Meu nome é Fernando Porto, tenho 22 anos e desde pequeno sempre fui familiarizado com a tecnologia. Criava conteúdos para o Youtube, configurava servidores de jogos e na plataforma Tumblr, uma rede social, eu configurava a minha própria página com uso do HTML. Iniciei minha carreira profissional aos 18 anos como Auxiliar Administrativo e aos 22 anos decidi migrar para área tecnológica como Desenvolvedor Full-Stack Júnior pela Generation Brasil, onde pude desenvolver minhas habilidades técnicas, comportamentais. Tenho facilidade de adaptação em equipes e muita persistência para atingir meus objetivos.
-    </p>
+        <div class="texto">
+          <p>
+            Meu nome é Fernando Porto, tenho 22 anos e desde pequeno sempre fui
+            familiarizado com a tecnologia. Criava conteúdos para o Youtube,
+            configurava servidores de jogos e na plataforma Tumblr, uma rede
+            social, eu configurava a minha própria página com uso do HTML.
+            Iniciei minha carreira profissional aos 18 anos como Auxiliar
+            Administrativo e aos 22 anos decidi migrar para área tecnológica
+            como Desenvolvedor Full-Stack Júnior pela Generation Brasil, onde
+            pude desenvolver minhas habilidades técnicas, comportamentais. Tenho
+            facilidade de adaptação em equipes e muita persistência para atingir
+            meus objetivos.
+          </p>
+        </div>
+      </div>
+    </main>
 
-    <img src="./assets/img/fotominha.png" alt="Foto do criador desse conteúdo">
+    <section>
+      <h2>Meu vídeo predileto:</h2>
 
-    <h2>Meu vídeo predileto:</h2>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FmOClDh5nUk" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-</body>
+      <div >
+        <iframe class="video"
+        src="https://www.youtube.com/embed/FmOClDh5nUk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div>
+        <a href="https://www.instagram.com/fegomeex_/" target="_blank">
+            <img
+            class="social"
+            src="./assets/img/instagram.png"
+            alt="Instagram"/>
+        </a>
+        <a href="https://www.linkedin.com/in/fernandoportojr/" target="_blank">
+            <img
+            class="social"
+            src="./assets/img/linkedin.png"
+            alt="Linkedin"
+        />
+        </a>
+      </div>
+      <p class="center">Criado com muito carinho por Fernando Porto &copy</p>
+    </footer>
+  </body>
 </html>
