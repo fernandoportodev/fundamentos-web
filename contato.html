@@ -25,21 +25,24 @@
     <section class="contato">
     <div class="formulario">
       <div>
-        <form>
+        <div>
           <label for="nome">Nome:</label><br />
-          <input type="text" id="nome" />
-          <br />
-          <br />
+          <input type="text" id="nome" onkeyup="validarNome()" />
+          <div id="txtNome"></div>
+        </div>
+        <div>
           <label for="email">E-mail:</label><br />
-          <input type="email" id="email" />
-          <br />
-          <br />
+          <input type="email" id="email" onkeyup="validarEmail()"/>
+          <div id="txtEmail"></div>
+          </div>
+          <div>
           <label for="assunto">Assunto:</label><br />
-          <textarea name="assunto" id="assunto" cols="60" rows="5">
+          <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validarAssunto()">
           </textarea>
-          <br />
-          <br />
-          <button class="enviar">Enviar</button>
+          <div id="txtAssunto"></div>
+          <div id="contador"></div>
+          </div>
+          <button type="submit" class="enviar" onclick="enviar()">Enviar</button>
         </form>
       </div>
 
@@ -76,6 +79,11 @@
       </div>
 
       <p>Criado com muito carinho por Fernando Porto &copy</p>
+      <p class="topo" onclick="subirTela()">Voltar ao topo</p>
     </footer>
+
+
+    <script src="./assets/script/script.js"></script>
+
   </body>
 </html>

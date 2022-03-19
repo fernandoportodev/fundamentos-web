@@ -62,10 +62,10 @@ a:hover{
 }
 
 .imagem {
-    border-radius: 50%;
-    width: 15vw;
-    border: 3px solid #ff0000;
-    padding: 5px;
+        border-radius: 50%;
+        width: 15vw;
+        border: 3px solid #ff0000;
+        padding: 5px;
 }
 
 .texto{

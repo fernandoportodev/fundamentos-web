@@ -20,7 +20,7 @@
     </nav>
 
     <main>
-      <h1>Sobre o Fernando</h1>
+      <h1 class="type-effect"></h1>
       <div class="sobre">
         <div>
           <img
@@ -78,6 +78,19 @@
         </a>
       </div>
       <p class="center">Criado com muito carinho por Fernando Porto &copy</p>
+      <p class="topo" onclick="subirTela()">Voltar ao topo</p>
     </footer>
+
+    <script src="./assets/script/script.js"></script>
+    <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new TypeIt(".type-effect", {
+          strings: ["Vamos falar sobre o Fernando... "],
+          loop: true
+        }).go()
+      });
+    </script>
   </body>
 </html>
